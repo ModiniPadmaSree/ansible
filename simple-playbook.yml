@@ -11,6 +11,13 @@
       apt:
         name: nginx
         state: present
+      notify: Restart nginx
+
+handlers:
+  - name: Restart nginx
+    service:
+      name: nginx
+      state: restarted
 
     - name: Start and enable Nginx service
       service:

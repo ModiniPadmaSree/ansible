@@ -15,7 +15,7 @@ cd tools/docker-compose
 docker-compose up -d  
 docker ps
 4. Access AWX UI  
-In browser: <ip_of_instance>  
+In browser: ip_of_instance  
 Login with username and password as 'admin'  
 5. Configure AWX  
 - Create Organization  
@@ -25,7 +25,7 @@ Name: awx
 AWX → Credentials → Add  
 Type: Machine  
 Username: ubuntu  
-SSH Private Key: paste <privatekey>  
+SSH Private Key: paste privatekey  
 - Create Inventory  
 AWX → Inventories → Add  
 Name: multi-cloud-inventory  

@@ -13,9 +13,9 @@ The INI format is used because it is simple and commonly used.
   
 Define Common Inventory Parameters  
 Each host entry may include:
-- `ansible_host` – Public IP or DNS of the VM
-- `ansible_user` – Operating system user for SSH
-- `ansible_ssh_private_key_file` – Private key on the control node  
+- ansible_host – Public IP or DNS of the VM
+- ansible_user – Operating system user for SSH
+- ansible_ssh_private_key_file – Private key on the control node  
   
 Create an Inventory Group for AWS  
 Define a group named aws and add EC2 instances to it.  
@@ -30,7 +30,7 @@ gcp_vm1 ansible_host=34.171.87.214 ansible_user=ubuntu ansible_ssh_private_key_f
 Create an Inventory Group for azure  
 Define a group named azure and add Azure instances.  
 [azure]  
-azure_vm1 ansible_host=<ip> ansible_user=azureuser ansible_ssh_private_key_file=~/.ssh/azure_key  
+azure_vm1 ansible_host=ip ansible_user=azureuser ansible_ssh_private_key_file=~/.ssh/azure_key  
   
 Combine All Cloud Groups  
 Create a parent group to manage all cloud instances together.  

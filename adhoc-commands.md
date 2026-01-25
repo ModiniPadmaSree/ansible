@@ -8,7 +8,7 @@ They are commonly used for:
 - Running shell commands  
   
 Syntax:  
-ansible <hosts> -m <module> -a "<arguments>"  
+ansible hosts -m module -a "arguments"  
   
  1. Ping Managed Nodes (Connectivity Check)  
 Used to verify SSH access.  
